@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-w-[1300px] mx-auto justify-center px-[10px] w-[100%]">
+        <section class="my-[20px] justify-center flex gap-8 flex-wrap">
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Template String/Literals</h1>
+                <p class=" pt-[10px] h-[200px]"><span class="bg-red-400 px-[10px] rounded-[5px]">` `</span> are the
+                    template Literals which are allows you to combine a one two or more strings, numbers, varaible etc.
+                <br>If you want to pass html, as well as css template literals is one of the best
+                    thing to use these
+                    to use these.
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+let x = "Hello";             
+let result = x + " World!";   
+console.log(result);
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer  md:w-[42%] bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700 ">
+                <h1 class="font-[700] text-[24px]  cursor-pointer">Data Types
+                </h1>
+                <p class=" pt-[10px] h-[200px]">Data type tells the computer that what kind of data you are working with. <br>There are two main data types in JavaScript: These are premitive or non-premitive<br>
+                    Premitive data types are basic blocks that can store singlw values like numbers,
+                    strings, words etc. Non Premitive can store multiple values and can be mutable.</p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+String, Symbols, Number,
+ Null, Bloean, Biginteger,
+  Object, Undefined
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer  md:w-[42%] bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px]  cursor-pointer ">Check Data types of Containers</h1>
+                <p class=" pt-[10px] h-[200px]"><span class="bg-red-400 px-[10px] rounded-[5px]">typeof()</span> is like a an
+                    operator which is used to check the data types of variables and constants.<br>Whenever we want to check the data type of variabla and constant we just use type
+                    of operator like this, console.log(typeof(x)) here x is a random variable or constant.</p>
+
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+let z = "Hello";             
+console.log(typeof(z));
+</pre>
+                </div>
+            </div>
+
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">Objects
+                </h1>
+                <p class=" pt-[10px] h-[200px]">Objects are the containers that are used to store attributes of a one main thing.
+                    Keys and values are used in objects to store and save.<br>Objects are mutable and their value changed whenever you want.</p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+let obj{
+    name: "Ali",
+    age: 34,
+    height: 6.6
+}
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">Arrays
+                </h1>
+                <p class=" pt-[10px] h-[200px]">
+                    Arrays also like a objects that are used to store multiple values and are mutable, that can be
+                    changed whenever needed. <br>The difference is that the values stored in array in the form of ordered.</p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+let fruits = ["apple", "banana", 
+"mango", "Lemon"];           
+console.log(fruits[0])
+console.log(fruits[2])
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px]  cursor-pointer">Operators
+                </h1>
+                <p class=" pt-[10px] h-[200px]">In JavaScript, operators are like symbols or words that perform actions on values
+                    (variables, numbers, strings, etc.) <br>Arithmetic, Assignment, Comparison, Logical Operators are the types of JS
+                    operators.</p>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+let x = "Hello";             
+let result = x + " World!";   
+if x>2
+if (x<2 || x=0)
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px]  cursor-pointer"> Coditional Statements
+                </h1>
+                <p class=" pt-[10px] h-[200px]">Condional statements are the statements that are used to that are executed on the
+                    behalf of condition, when a particular condition meets the requirements it will be executed, if the codition does'nt meet the requirements it will not be executed
+                      <span class="bg-red-400 px-[10px] rounded-[5px]"> if()</span> or <span
+                        class="bg-red-400 px-[10px] rounded-[5px]">else</span> are used.
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+let x=9;, let y=10;
+if(x>y){alert("X is greater")}
+else{alert("Y is greater")}
+</pre>
+                </div>
+            </div>
+           
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer"> Methods of Arryas
+                </h1>
+                <p class=" pt-[10px] h-[200px]">
+                    Methods arrays also decrease the ccomplexity of javascript and arrays, there are most commonly used methods available which were perform different functions, few of them are as follows:
+             </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+toString(), at(), join(), pop(), push()
+shift(), unshift(), length
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer"> Methods of Strings
+                </h1>
+                <p class=" pt-[10px] h-[200px]">As like objects and arrays strings also contain some methods, the functions of the string methods also same as arrays and objects, few of them are as follows: <br> <span class="bg-red-400 px-[10px] rounded-[5px]">` `</span> are the
+                    template Literals which are allows you to combine a one two or more strings, numbers, varaible etc.
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+length,charAt(), charCodeAt(), 
+codePointAt(), concat(), at(), []
+slice(), substring(), substr(), 
+toUpperCase(), toLowerCase()
+</pre>
+                </div>
+        </section>
+    </section>
+</body>
+
+</html>

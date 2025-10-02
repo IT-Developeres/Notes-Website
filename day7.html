@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-w-[1300px] mx-auto justify-center px-[10px] w-[100%]">
+        <section class="my-[20px] justify-center flex gap-8 flex-wrap">
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Loops</h1>
+                <p class=" pt-[10px] h-[200px]">The basic meaning of a loop in programming is:
+
+                    A loop is a way to repeat a set of instructions multiple times, automatically.
+                    <br>
+                    Repeat tasks easily<br>
+                    Handle repetitive work with less code
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+for loop, while loop, do-while-loop
+for of, for in loop
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%]  cursor-pointer md:w-[42%] bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700 ">
+                <h1 class="font-[700] text-[24px]  cursor-pointer">For loop
+                </h1>
+                <p class=" pt-[10px] h-[200px]">When you know how much time the code execute then for off loop used. For
+                    off loop easy to use example shown below:</p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+for (let i = 0; i < 5; i++) {
+  console.log("Count: " + i);
+}
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer  md:w-[42%] bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px]  cursor-pointer ">While loop</h1>
+                <p class=" pt-[10px] h-[170px]">The loop excutes block of codes untill condition true.</p>
+
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+let i = 0
+while (i > 0 ) {
+    i++
+    console.log(i) }
+</pre>
+                </div>
+            </div>
+
+            <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%] cursor-pointer bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">Do While loop
+                </h1>
+                <p class=" pt-[10px] h-[170px]">In this type of loop code execute one time untill the condition false.</p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+ let i = 0
+ do {
+     i++
+     console.log(i)
+ } while (i > 10);
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%] cursor-pointer bg-green-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">For off loop
+                </h1>
+                <p class=" pt-[10px] h-[170px]">
+                This type of loop in iterable values like in arrays    
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const fruits = ["apple", "banana",
+ "cherry"];
+for (let fruit of fruits) {
+  console.log(fruit);
+}
+</pre>
+                </div>
+            </div>
+             <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%]  cursor-pointer bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">For in loop
+                </h1>
+                <p class=" pt-[10px] h-[170px]">
+                    This type of loop used in objects</p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const person = { name: "John", age: 30 };
+for (let key in person) {
+  console.log(key + ": " + person[key]);
+}
+</pre>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
