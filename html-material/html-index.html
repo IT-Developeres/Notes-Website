@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
+<header class="hidden md:flex items-center justify-between cursor-pointer bg-blue-500 p-3 hover:bg-pink-500">
+        <h1 class="text-white text-[20px] font-bold cursor-pointer">Master Class</h1>
+        <nav>
+            <ul class="flex space-x-4 font-[50px] text-[18px] text-white">
+                <li>
+                    <a href="index.html" class="pb-1  hover:text-black">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" pb-1  hover:text-black">
+                        HTML
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" pb-1  hover:text-black">
+                        CSS
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1  hover:text-black">
+                        JavaScript
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <section class="block md:hidden">
+    <div class="bg-blue-500 p-4 flex justify-between items-center">
+    <h1 class="text-white text-2xl">Master Class</h1>
+    <button onclick="openRightMenu()" class="text-white text-3xl">&#9776;</button>
+  </div>
+  <div id="rightMenu" class="fixed top-0 right-0 h-full w-64 bg-[white] text-blue-500 shadow-lg text-900 p-4 transform translate-x-full transition-transform duration-300 ease-in-out">
+    <button onclick="closeRightMenu()" class="text-blue-500 text-2xl mb-4">&times;</button>
+    <ul class="space-y-4">
+      <li><a href="#" class="block hover:bg-red-500 p-2 rounded">HTML</a></li>
+      <li><a href="#" class="block hover:bg-red-500 p-2 rounded">CSS</a></li>
+      <li><a href="#" class="block hover:bg-red-500 p-2 rounded">JavaScript</a></li>
+      <li><a href="#" class="block hover:bg-red-500 p-2 rounded">REACT JS</a></li>
+
+    </ul>
+  </div>
+  </section>
+    <section class="w-full gradient-bg text-white py-12 px-6 text-center">
+        <h1 class="font-black text-4xl mb-4 text-[black]">Master HTML Class</h1>
+
+    </section>
+    <section class="justify-center mx-auto w-[100%] max-w-[1300px]">
+
+        <section class="my-[20px] flex gap-12 flex-wrap w-[100%] justify-center px-2">
+            <div
+                class=" bg-green-400 lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] cursor-pointer rounded-xl p-6 border-l-4 border-l-indigo-500 shadow-md transition-all duration-300 hover:bg-yellow-300">
+                <h1
+                    class="font-bold text-xl text-gray-800 mt-4 mb-3 ">
+                    Basics of HTML
+                </h1>
+                <p
+                    class="line-clamp-3 overflow-hidden pt-[10px] text-stone-900">
+                    In the bacics ot HTML class we will discuss the basic things of HTML5, syntax and its importance in the field of web and app development field.
+                </p>
+                <a class="underline text-indigo-600 transition-colors duration-300 hover:text-pink-600"
+                    href="basic-html.html">Read More</a>
+            </div>
+            <div
+                class="bg-blue-400 lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] cursor-pointer rounded-xl p-6 border-l-4 border-l-indigo-500 shadow-md transition-all duration-300 hover:bg-green-400">
+                <span class="font-[16px] text-gray-500">Sep 30, 2025</span>
+                <h1
+                    class="font-bold text-xl text-gray-800 mt-4 mb-3">
+                    Day 6 JS TUTORIAL
+                </h1>
+                <p
+                    class="line-clamp-3 overflow-hidden pt-[10px] text-stone-900 ">
+                    In the first day js TUTORIAL we have learn the basic thing of JS, e.g. intro to JS, syntax of JS,
+                    use
+                    of JS, printing methods of JS, concatenation, variables/containers and constant.
+                </p>
+                <a class="underline text-indigo-600 transition-colors duration-300 hover:text-pink-600"
+                    href="day6.html">Read More</a>
+            </div>
+            <div
+                class="bg-yellow-400 lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%]cursor-pointer rounded-xl p-6 border-l-4 border-l-indigo-500 shadow-md transition-all duration-300 hover:bg-blue-300">
+                <span class="font-[16px] text-gray-500">Sep 24, 2025</span>
+                <h1
+                    class="font-bold text-xl text-gray-800 mt-4 mb-3 transition-colors duration-300 hover:text-pink-600 cursor-pointer">
+                    Day 6 JS Task
+                </h1>
+                <div class="w-[100%] ">
+                                    <img class="rounded-[10px] w-full" src="Capture.PNG" alt="">
+
+                </div>
+                <a class="underline text-indigo-600 transition-colors duration-300 hover:text-pink-600"
+                    href="https://it-developeres.github.io/JS-Table/">Read More</a>
+            </div>
+             <div
+                class="bg-blue-400 lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%]cursor-pointer rounded-xl p-6 border-l-4 border-l-indigo-500 shadow-md transition-all duration-300 hover:bg-yellow-300">
+                <span class="font-[16px] text-gray-500">Sep 24, 2025</span>
+                <h1
+                    class="font-bold text-xl text-gray-800 mt-4 mb-3 transition-colors duration-300 hover:text-pink-600 cursor-pointer">
+                    Day 7 JS TUTORIAL
+                </h1>
+                <p
+                    class="line-clamp-3 overflow-hidden pt-[10px] text-stone-900">
+                    In the 7th day of JavaScript master class we cover the basics of loop and functions. In this class we have discussed all the 5 kinds of JS loops and three kinds of functions.
+                </p>
+                <a class="underline text-indigo-600 transition-colors duration-300 hover:text-pink-600"
+                    href="day7.html">Read More</a>
+            </div>
+              <div
+                class=" bg-yellow-400 lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] cursor-pointer rounded-xl p-6 border-l-4 border-l-indigo-500 shadow-md transition-all duration-300 hover:bg-blue-400">
+                <span class="font-[16px] text-gray-500">2 OCT, 2025</span>
+                <h1
+                    class="font-bold text-xl text-gray-800 mt-4 mb-3 transition-colors duration-300 hover:text-pink-600 cursor-pointer">
+                    Day 8 JS TUTORIAL
+                </h1>
+                <p
+                    class="line-clamp-3 overflow-hidden pt-[10px] text-stone-900">
+                    In the 8th day of JavaScript master class we have learned the methods of arrays in js, these methods are used to enhance the usabilty of arrays
+                </p>
+                <a class="underline text-indigo-600 transition-colors duration-300 hover:text-pink-600"
+                    href="day8.html">Read More</a>
+            </div>
+        </section>
+        
+        
+    </section>
+    <footer class="bg-pink-500 text-white text-center p-4 mt-5 cursor-pointer hover:bg-green-400 ">
+        @ 2025 Notes Website. All rights reserved by IT Developer.</footer>
+
+
+
+         <script>
+    const rightMenu = document.getElementById("rightMenu");
+
+    function openRightMenu() {
+      rightMenu.classList.remove("translate-x-full");
+    }
+
+    function closeRightMenu() {
+      rightMenu.classList.add("translate-x-full");
+    }
+  </script>
+</body>
+
+</html>
+

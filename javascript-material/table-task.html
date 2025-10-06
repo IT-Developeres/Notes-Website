@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-w-[1300px] mx-auto justify-center px-[10px] w-[100%]">
+        <div class="text-center pt-[10px] pb-[10px]">
+            <a href="https://it-developeres.github.io/JS-Table/" class="bg-pink-400 p-[10px] mt-[10px] mb-[10px]">Live Visit</a>
+        </div>
+        <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const name = prompt("Enter Student name");
+const fatherName = prompt("Enter Father name");
+const rollNo = prompt("Enter Student Roll No.");
+const subjectMarks = parseInt(prompt("Enter total marks for each subject")) || 100;
+
+let subjectName = []
+let subjectObtained = []
+let subjectPercentage = []
+let subjectGrades = []
+
+function getGrade(percentage) {
+    if (percentage >= 90) {
+        return "A+";
+    } else if (percentage >= 80) {
+        return "A";
+    } else if (percentage >= 70) {
+        return "B";
+    } else if (percentage >= 60) {
+        return "C";
+    } else if (percentage >= 50) {
+        return "D";
+    } else if (percentage >= 40) {
+        return "E";
+    } else {
+        return "F";
+    }
+}
+
+
+const subject1 = prompt("Enter name for Subject1");
+const subject2 = prompt("Enter name for Subject2");
+const subject3 = prompt("Enter name for Subject3");
+const subject4 = prompt("Enter name for Subject4");
+const subject5 = prompt("Enter name for Subject5");
+
+
+const subject1Obtained = parseFloat(prompt(`Enter obtained number of Subject1: ${subject1}`)) || 0;
+const subject2Obtained = parseFloat(prompt(`Enter obtained number of Subject2: ${subject2}`)) || 0;
+const subject3Obtained = parseFloat(prompt(`Enter obtained number of Subject3: ${subject3}`)) || 0;
+const subject4Obtained = parseFloat(prompt(`Enter obtained number of Subject4: ${subject4}`)) || 0;
+const subject5Obtained = parseFloat(prompt(`Enter obtained number of Subject5: ${subject5}`)) || 0;
+
+
+const subject1Percentage = (subject1Obtained / subjectMarks) * 100;
+const subject1Grade = getGrade(subject1Percentage);
+
+const subject2Percentage = (subject2Obtained / subjectMarks) * 100;
+const subject2Grade = getGrade(subject2Percentage);
+
+const subject3Percentage = (subject3Obtained / subjectMarks) * 100;
+const subject3Grade = getGrade(subject3Percentage);
+
+const subject4Percentage = (subject4Obtained / subjectMarks) * 100;
+const subject4Grade = getGrade(subject4Percentage);
+
+const subject5Percentage = (subject5Obtained / subjectMarks) * 100;
+const subject5Grade = getGrade(subject5Percentage);
+
+
+const totalObtained = subject1Obtained + subject2Obtained + subject3Obtained + subject4Obtained + subject5Obtained;
+const totalMarks = subjectMarks * 5;
+const overallPercentage = (totalObtained / totalMarks) * 100;
+const overallGrade = getGrade(overallPercentage);
+
+
+document.write(`
+    <div style="font-family: Arial; max-width:800px; margin:auto; padding:20px; border:5px solid blue; border-radius:10px; background:#c157ed;">  
+        <h2 style="text-align:center; color:blue;">Student Result Sheet</h2>
+        <p><b>Name:</b> ${name}</p>
+        <p><b>Father Name:</b> ${fatherName}</p>
+        <p><b>Roll No.:</b> ${rollNo}</p>
+
+        <table style="width:100%; border-collapse:collapse; margin-top:15px;">
+            <tr>
+                <th style="border:2px solid red; background:green; padding:8px;">Subject</th>
+                <th style="border:2px solid red; background:green; padding:8px;">Obtained Marks</th>
+                <th style="border:2px solid red; background:green; padding:8px;">Total Marks</th>
+                <th style="border:2px solid red; background:green; padding:8px;">Percentage</th>
+                <th style="border:2px solid red; background:green; padding:8px;">Grade</th>
+            </tr>
+
+            <tr>
+                <td style="border:2px solid red; padding:8px;">${subject1}</td>
+                <td style="border:2px solid red; padding:8px;">${subject1Obtained}</td>
+                <td style="border:2px solid red; padding:8px;">${subjectMarks}</td>
+                <td style="border:2px solid red; padding:8px;">${subject1Percentage.toFixed(2)}%</td>
+                <td style="border:2px solid red; padding:8px;">${subject1Grade}</td>
+            </tr>
+            <tr>
+                <td style="border:2px solid red; padding:8px;">${subject2}</td>
+                <td style="border:2px solid red; padding:8px;">${subject2Obtained}</td>
+                <td style="border:2px solid red; padding:8px;">${subjectMarks}</td>
+                <td style="border:2px solid red; padding:8px;">${subject2Percentage.toFixed(2)}%</td>
+                <td style="border:2px solid red; padding:8px;">${subject2Grade}</td>
+            </tr>
+            <tr>
+                <td style="border:2px solid red; padding:8px;">${subject3}</td>
+                <td style="border:2px solid red; padding:8px;">${subject3Obtained}</td>
+                <td style="border:2px solid red; padding:8px;">${subjectMarks}</td>
+                <td style="border:2px solid red; padding:8px;">${subject3Percentage.toFixed(2)}%</td>
+                <td style="border:2px solid red; padding:8px;">${subject3Grade}</td>
+            </tr>
+            <tr>
+                <td style="border:2px solid red; padding:8px;">${subject4}</td>
+                <td style="border:2px solid red; padding:8px;">${subject4Obtained}</td>
+                <td style="border:2px solid red; padding:8px;">${subjectMarks}</td>
+                <td style="border:2px solid red; padding:8px;">${subject4Percentage.toFixed(2)}%</td>
+                <td style="border:2px solid red; padding:8px;">${subject4Grade}</td>
+            </tr>
+            <tr>
+                <td style="border:2px solid red; padding:8px;">${subject5}</td>
+                <td style="border:2px solid red; padding:8px;">${subject5Obtained}</td>
+                <td style="border:2px solid red; padding:8px;">${subjectMarks}</td>
+                <td style="border:2px solid red; padding:8px;">${subject5Percentage.toFixed(2)}%</td>
+                <td style="border:2px solid red; padding:8px;">${subject5Grade}</td>
+            </tr>
+        </table>
+
+        <h3 style="margin-top:20px; color:#333;">Overall Result</h3>
+        <p><b>Total Obtained Marks:</b> ${totalObtained} / ${totalMarks}</p>
+        <p><b>Overall Percentage:</b>  ${overallPercentage.toFixed(2)}%</p>
+        <p><b>Overall Grade:</b> ${overallGrade}</p>
+    </div>
+`);
+
+</pre>
+                </div>
+        
+    </section>
+</body>
+
+</html>

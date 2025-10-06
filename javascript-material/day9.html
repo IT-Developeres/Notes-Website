@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-w-[1300px] mx-auto justify-center px-[10px] w-[100%]">
+        <section class="my-[20px] justify-center flex gap-8 flex-wrap">
+          
+            <div
+                class="lg:w-[30%] sm:w-[100%]  cursor-pointer md:w-[42%] bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700 ">
+                <h1 class="font-[700] text-[24px]  cursor-pointer">String length
+                </h1>
+                <p class=" pt-[10px] h-[200px]">The length method is used to check the length of the string</p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "Hello";
+console.log(str.length); 
+//output will be 5 
+
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer  md:w-[42%] bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px]  cursor-pointer ">charAt() & charCodeAt()</h1>
+                <p class=" pt-[10px] h-[170px]"> charAt()Returns the character at the specified index.
+                    <br>
+                    charCodeAt() Returns the Unicode value of the character at the specified index.
+                </p>
+
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "Hello";
+console.log(str.charAt(0));
+
+const str = "Hello";
+console.log(str.charCodeAt(0)); 
+</pre>
+                </div>
+            </div>
+
+            <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%] cursor-pointer bg-green-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">codepointat()
+                </h1>
+                <p class=" pt-[10px] h-[170px]">
+                    Returns the Unicode code point of the character at the specified index.
+            </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "Hello";
+console.log(str.codePointAt(0));
+ // 72 (Unicode code point of "H")
+
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%] cursor-pointer bg-green-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">Concatenation & at()
+                </h1>
+                <p class=" pt-[10px] h-[170px]">
+                Concatenates two or more strings.
+                <br>
+                Returns the character at the specified index, similar to charAt(). Supports negative indices. 
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str1 = "Hello";
+const str2 = " World";
+console.log(str1.concat(str2));                         
+const str = "Hello";
+console.log(str.at(0)); // "H"
+</pre>
+                </div>
+            </div>
+             <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%]  cursor-pointer bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">Spring []
+                </h1>
+                <p class=" pt-[10px] h-[170px]">
+Returns the character at the specified index, similar to charAt().
+                    <br>
+
+
+                    </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+cconst str = "Hello";
+console.log(str[0]); // "H"
+</pre>
+                </div>
+            </div>
+
+             <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Slice & substring</h1>
+                <p class=" pt-[10px] h-[200px]">Extracts a section of the string.
+                    <br>
+            Similar to slice(), extracts a section of the string.
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "Hello World";
+console.log(str.slice(6)); // "World"
+console.log(str.slice(0, 5)); // "Hello"
+const str = "Hello World";
+console.log(str.substring(6));
+</pre>
+                </div>
+            </div>
+
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">toUpperCase() & toLowerCase()</h1>
+                <p class=" pt-[10px] h-[200px]">Converts the string to uppercase.
+<br>Converts the string to lowercase.
+
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "hello";
+console.log(str.toUpperCase());
+const str = "HELLO";
+console.log(str.toLowerCase());
+</pre>
+                </div>
+            </div>
+                 <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">isWellFormed() & toWellFormed()</h1>
+                <p class=" pt-[10px] h-[200px]">Checks if the string is well-formed (no lone surrogates).
+                    <br>Replaces lone surrogates with the Unicode replacement character.
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "Hello";
+console.log(str.isWellFormed());
+const str = "\uD800"; // lone surrogate
+console.log(str.toWellFormed());
+ // "\uFFFD" (replacement character)
+</pre>
+                </div>
+            </div>
+             <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">trim(),trimStart() & trimEnd()</h1>
+                <p class=" pt-[10px] h-[200px]">Removes whitespace from both ends.
+                    <br>Removes whitespace from the start.
+                    <br>
+                    Removes whitespace from the end.
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "   Hello   ";
+console.log(str.trim()); // "Hello"
+const str = "   Hello   ";
+console.log(str.trimStart()); // "Hello   "
+const str = "   Hello   ";
+console.log(str.trimEnd()); /
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">padStart() & padEnd() </h1>
+                <p class=" pt-[10px] h-[200px]">Pads the string with a specified string from the start.
+
+                    <br>Pads the string with a specified string from the end.
+
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "Hello";
+console.log(str.padStart(8, "*")); // "***Hello"
+const str = "Hello";
+console.log(str.padEnd(8, "*")); // "Hello***"
+</pre>
+                </div>
+            </div>
+
+                <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer"> repeat() & replace() </h1>
+                <p class=" pt-[10px] h-[200px]">Repeats the string.
+                    <br>
+
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "Hello";
+console.log(str.repeat(3));
+const str = "Hello World, Hello!";
+console.log(str.replace("Hello", "Hi"));
+</pre>
+                </div>
+            </div>
+               <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">  replaceAll() &  split()</h1>
+                <p class=" pt-[10px] h-[200px]">Replaces all occurrences of a specified string.
+                    <br>
+Splits the string into an array of substrings.
+
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const str = "Hello World, Hello!";
+console.log(str.replaceAll("Hello", "Hi")); // "Hi World, Hi!"
+const str = "Hello,World,!";
+console.log(str.split(",")); // ["Hello", "World", "!"]
+</pre>
+                </div>
+            </div>
+
+        </section>
+    </section>
+</body>
+
+</html>

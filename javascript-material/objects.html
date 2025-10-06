@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-w-[1300px] mx-auto justify-center px-[10px] w-[100%]">
+        <section class="my-[20px] justify-center flex gap-8 flex-wrap">
+          
+            <div
+                class="lg:w-[30%] sm:w-[100%]  cursor-pointer md:w-[42%] bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700 ">
+                <h1 class="font-[700] text-[24px]  cursor-pointer">Object.keys
+                </h1>
+                <p class=" pt-[10px] h-[200px]">Returns an array of a given object's own property names.</p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const obj= {a:1,b:2, c:4}
+console.log(Object.keys(obj))
+//["a", "b", "c"]
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer  md:w-[42%] bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px]  cursor-pointer ">Object.values</h1>
+                <p class=" pt-[10px] h-[170px]">Returns an array of a given object's own property values.
+                </p>
+
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const obj= {a:1,b:2, c:4}
+console.log(Object.value(obj))
+</pre>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
