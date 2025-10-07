@@ -16,7 +16,7 @@
                 class="lg:w-[30%] sm:w-[100%]  cursor-pointer md:w-[42%] bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700 ">
                 <h1 class="font-[700] text-[24px]  cursor-pointer">String length
                 </h1>
-                <p class=" pt-[10px] h-[200px]">The length method is used to check the length of the string</p>
+                <p class=" pt-[10px] h-[170px]">The length method is used to check the length of the string</p>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
                     <pre>
 const str = "Hello";
@@ -62,7 +62,7 @@ console.log(str.codePointAt(0));
                 </div>
             </div>
             <div
-                class="lg:w-[30%] sm:w-[100%] md:w-[42%] cursor-pointer bg-green-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%] cursor-pointer bg-pink-400 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
                 <h1 class="font-[700] text-[24px] cursor-pointer">Concatenation & at()
                 </h1>
                 <p class=" pt-[10px] h-[170px]">
@@ -81,11 +81,11 @@ console.log(str.at(0)); // "H"
                 </div>
             </div>
              <div
-                class="lg:w-[30%] sm:w-[100%] md:w-[42%]  cursor-pointer bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
-                <h1 class="font-[700] text-[24px] cursor-pointer">Spring []
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%]  cursor-pointer bg-violet-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">String []
                 </h1>
                 <p class=" pt-[10px] h-[170px]">
-Returns the character at the specified index, similar to charAt().
+Returns the character at the specified index, similar to charAt(). String[] not used for negative indexes.
                     <br>
 
 
@@ -99,11 +99,14 @@ console.log(str[0]); // "H"
             </div>
 
              <div
-                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-purple-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
                 <h1 class="font-[700] text-[22px]  cursor-pointer">Slice & substring</h1>
-                <p class=" pt-[10px] h-[200px]">Extracts a section of the string.
+                <p class=" pt-[10px] h-[200px]">slice() extracts a part of a string and returns the extracted part in a new string.
                     <br>
-            Similar to slice(), extracts a section of the string.
+substring() is similar to slice(). <br>
+
+The difference is that start and end values less than 0 are treated as 0 in substring().
+
                 </p>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
@@ -111,16 +114,16 @@ const str = "Hello World";
 console.log(str.slice(6)); // "World"
 console.log(str.slice(0, 5)); // "Hello"
 const str = "Hello World";
-console.log(str.substring(6));
+console.log(str.substring(2, 6));
 </pre>
                 </div>
             </div>
 
             <div
-                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
                 <h1 class="font-[700] text-[22px]  cursor-pointer">toUpperCase() & toLowerCase()</h1>
-                <p class=" pt-[10px] h-[200px]">Converts the string to uppercase.
-<br>Converts the string to lowercase.
+                <p class=" pt-[10px] h-[200px]">toUpperCase() Converts the string to uppercase.
+<br>toLowerCase() Converts the string to lowercase.
 
                 </p>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
@@ -135,8 +138,8 @@ console.log(str.toLowerCase());
                  <div
                 class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
                 <h1 class="font-[700] text-[22px]  cursor-pointer">isWellFormed() & toWellFormed()</h1>
-                <p class=" pt-[10px] h-[200px]">Checks if the string is well-formed (no lone surrogates).
-                    <br>Replaces lone surrogates with the Unicode replacement character.
+                <p class=" pt-[10px] h-[200px]">isWellFormed() This method checks if a string is well-formed according to specific rules.
+                    <br>This method takes a string and returns a well-formed version of it. It may replace or remove characters that are not well-formed according to specific rules.
                 </p>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
@@ -151,10 +154,10 @@ console.log(str.toWellFormed());
              <div
                 class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
                 <h1 class="font-[700] text-[22px]  cursor-pointer">trim(),trimStart() & trimEnd()</h1>
-                <p class=" pt-[10px] h-[200px]">Removes whitespace from both ends.
-                    <br>Removes whitespace from the start.
+                <p class=" pt-[10px] h-[200px]">trim() Removes whitespace from both ends.
+                    <br>trimStart() Removes whitespace from the start.
                     <br>
-                    Removes whitespace from the end.
+                    trimEnd() Removes whitespace from the end.
                 </p>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
@@ -170,9 +173,9 @@ console.log(str.trimEnd()); /
             <div
                 class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
                 <h1 class="font-[700] text-[22px]  cursor-pointer">padStart() & padEnd() </h1>
-                <p class=" pt-[10px] h-[200px]">Pads the string with a specified string from the start.
+                <p class=" pt-[10px] h-[200px]">padStart() Pads the string with a specified string from the start.
 
-                    <br>Pads the string with a specified string from the end.
+                    <br>padEnd() Pads the string with a specified string from the end.
 
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
@@ -187,31 +190,32 @@ console.log(str.padEnd(8, "*")); // "Hello***"
                 <div
                 class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
                 <h1 class="font-[700] text-[22px]  cursor-pointer"> repeat() & replace() </h1>
-                <p class=" pt-[10px] h-[200px]">Repeats the string.
+                <p class=" pt-[10px] h-[200px]">repeat() Repeats the string much time you want.
                     <br>
+                The replace() method replaces a specified value with another value in a string:
+
 
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
 const str = "Hello";
 console.log(str.repeat(3));
-const str = "Hello World, Hello!";
-console.log(str.replace("Hello", "Hi"));
+let text = "Please visit";
+let newText=text.replace("visit", "he")
 </pre>
                 </div>
             </div>
                <div
                 class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-500  px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
-                <h1 class="font-[700] text-[22px]  cursor-pointer">  replaceAll() &  split()</h1>
-                <p class=" pt-[10px] h-[200px]">Replaces all occurrences of a specified string.
+                <h1 class="font-[700] text-[22px]  cursor-pointer">replaceAll() &  split()</h1>
+                <p class=" pt-[10px] h-[200px]">replaceAll() are used to replace all of the things that were selected
                     <br>
-Splits the string into an array of substrings.
-
+split() method is used to split a string into an array based on a given separator (like space, comma, or any character).
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
 const str = "Hello World, Hello!";
 console.log(str.replaceAll("Hello", "Hi")); // "Hi World, Hi!"
 const str = "Hello,World,!";
-console.log(str.split(",")); // ["Hello", "World", "!"]
+console.log(str.split(",,,")); // ["Hello",,, "World",,, "!"]
 </pre>
                 </div>
             </div>
