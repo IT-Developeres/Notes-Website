@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="max-w-[1300px] mx-auto justify-center px-[10px] w-[100%]">
+        <section class="my-[20px] justify-center flex gap-8 flex-wrap">
+
+            <div
+                class="lg:w-[30%] sm:w-[100%]  cursor-pointer md:w-[42%] bg-blue-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700 ">
+                <h1 class="font-[700] text-[24px]  cursor-pointer">What is DOM?
+                </h1>
+                <p class=" pt-[10px] h-[170px]">DOM stands for document object model which were introduced after 1990s
+                    is tree like structure which control user behaviour and perform actions on the basis of user issued
+                    commands.<br>The HTML DOM is a standard object model and programming interface for HTML.</p>
+
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer  md:w-[42%] bg-yellow-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px]  cursor-pointer ">DOM Methods</h1>
+                <p class=" pt-[10px] h-[170px]"> HTML DOM methods are actions you can perform (on HTML Elements).
+
+                    <br>
+                    The HTML DOM can be accessed with JavaScript. In the DOM, all HTML elements are defined as objects.
+
+                </p>
+
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px] font-mono text-sm overflow-x-auto italic">
+                    <pre>
+getElementById Method()
+getElementsByClassName()
+getElementsByTagName()
+querySelector()
+querySelectorAll() 
+</pre>
+                </div>
+            </div>
+
+            <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%] cursor-pointer bg-green-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">HTML Elements
+                </h1>
+                <p class=" pt-[10px] h-[170px]">
+                    innerHTML changes the whole tag as selected, innerText change only the text in the targeted tags.
+                    There are elements available which can be used for different purposes.
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+createElement
+removeChild
+replaceChild
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%] cursor-pointer bg-pink-400 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">Document.write()
+                </h1>
+                <p class=" pt-[10px] h-[170px]">
+                    document.write is a powerful method in dom, bcz using this we can write the whole html documnet,
+                    inline css and even use tailwind in the single template literals, we can pass variable, tags and
+                    something else which we want. <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+documnet.write()
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] md:w-[42%]  cursor-pointer bg-violet-500 px-[20px] shadow-lg hover:shadow-2xl py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[24px] cursor-pointer">DOM Events Attributes
+                </h1>
+                <p class=" pt-[10px] h-[270px]">
+                    A JavaScript can be executed when an event occurs, like when a user clicks on an HTML element.
+
+                    <br>
+                    To assign events to HTML elements you can use event attributes.
+                    The onload and onunload events can be used to deal with cookies.
+                    The oninput event is often to some action while the user input data.
+                </p>
+
+            </div>
+
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">List of Events</h1>
+                <p class=" pt-[10px] h-[200px]"> There are list of events available in js dom for different purposes.
+                    <br>
+                    click, dblclick, mouseover, mouseout, mouseout, mouseleave, mousemove, mouseup etc. are events in
+                    JavaScript DOM.<br>
+                </p>
+            </div>
+ <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Changing HTML</h1>
+                <p class=" pt-[10px] h-[200px]"> 
+       You can use .textContent or .innerText. to change the html text and using innerHTML you can change tag also.
+
+                    <br>
+                   <br>
+                </p>
+                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const para = document.
+getElementById("msg");
+para.textContent = "Changed 
+text using DOM!";
+</pre>
+                </div>
+            </div>
+             <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Changing CSS</h1>
+                <p class=" pt-[10px] h-[200px]"> 
+       You can use .style to change the css of the html tags.
+
+                    <br>
+                   <br>
+                </p>
+                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+function changeStyle() {
+  const p = document.getElementById("text");
+  p.style.color = "white";
+  p.style.backgroundColor = "blue";
+  p.style.fontSize = "24px";
+  p.style.padding = "10px";
+  p.style.borderRadius = "8px";
+}
+</pre>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>
