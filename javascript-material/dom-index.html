@@ -47,14 +47,13 @@ querySelectorAll()
                 <h1 class="font-[700] text-[24px] cursor-pointer">HTML Elements
                 </h1>
                 <p class=" pt-[10px] h-[170px]">
-                    innerHTML changes the whole tag as selected, innerText change only the text in the targeted tags.
-                    There are elements available which can be used for different purposes.
+                    createElement(tagName) is used to create a new HTML element code. <br> appendChild(childNode) adds a new child to parent element. <br> remove() removes the element itself from DOM.
                 </p>
                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
-createElement
+createElement(tagName)
 removeChild
-replaceChild
+remove
 </pre>
                 </div>
             </div>
@@ -97,16 +96,15 @@ documnet.write()
                     JavaScript DOM.<br>
                 </p>
             </div>
- <div
+            <div
                 class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
                 <h1 class="font-[700] text-[22px]  cursor-pointer">Changing HTML</h1>
-                <p class=" pt-[10px] h-[200px]"> 
-       You can use .textContent or .innerText. to change the html text and using innerHTML you can change tag also.
-
+                <p class=" pt-[10px] h-[200px]">
+                    You can use .textContent to change the content, if you pass any tag or something else it can only show as a content.
                     <br>
-                   <br>
+                    <br>
                 </p>
-                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
 const para = document.
 getElementById("msg");
@@ -115,16 +113,173 @@ text using DOM!";
 </pre>
                 </div>
             </div>
-             <div
-                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
-                <h1 class="font-[700] text-[22px]  cursor-pointer">Changing CSS</h1>
-                <p class=" pt-[10px] h-[200px]"> 
-       You can use .style to change the css of the html tags.
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-pink-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Changing HTML</h1>
+                <p class=" pt-[10px] h-[200px]">
+                    You can use innerHTML to change the whole tag fully.
 
                     <br>
-                   <br>
+                    <br>
                 </p>
-                 <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const para = document.
+getElementById("msg");
+para.innerHTML = "This is the
+ <strong>new</strong> content!";
+
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Changing HTML</h1>
+                <p class=" pt-[10px] h-[200px]">
+                    You can use  innerText to change text content in the selected tag.
+
+                    <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const para = document.
+getElementById("msg");
+para.innerText = "Changed 
+text using DOM!";
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Click Event</h1>
+                <p class=" pt-[10px] h-[200px]">
+                   The function call when the user clicks the mouse button.
+                  <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const lives = document.getElementById("control")
+lives.addEventListener("click", function() {
+  lives.innerText = "Clicked"
+});
+</pre>
+                </div>
+            </div>
+             <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-pink-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Double Click Events</h1>
+                <p class=" pt-[10px] h-[200px]">
+                   The function call when the user clicks the mouse button.
+                  <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const lives = document.getElementById("control")
+lives.addEventListener("dblclick", function() {
+  lives.innerText = "Clicked"
+});
+</pre>
+                </div>
+            </div>
+                <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Mouseover</h1>
+                <p class=" pt-[10px] h-[200px]">
+                   The function call when the user moves the cursor to the document or page.
+                  <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const lives = document.getElementById("control")
+lives.addEventListener("mouseover", function() {
+  lives.innerText = "Clicked"
+});
+</pre>
+                </div>
+            </div>
+                 <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Mouseout</h1>
+                <p class=" pt-[10px] h-[200px]">
+                   The function call when the user moves the cursor to the element and when the this element go then this function work.
+                  <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const lives = document.getElementById("control")
+lives.addEventListener("mouseout", function() {
+  lives.innerText = "Clicked"
+});
+</pre>
+                </div>
+            </div>
+                 <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Mousemove</h1>
+                <p class=" pt-[10px] h-[200px]">
+                   The function call when the user moves the cursor to the document or page.
+                  <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const lives = document.getElementById("control")
+lives.addEventListener("mousemove", function() {
+  lives.innerText = "Clicked"
+});
+</pre>
+                </div>
+            </div>
+                 <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">MouseUp</h1>
+                <p class=" pt-[10px] h-[200px]">
+                   The function call when the user moves the cursor to the document or page.
+                  <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+const lives = document.getElementById("control")
+lives.addEventListener("mouseup", function() {
+  lives.innerText = "Clicked"
+});
+</pre>
+                </div>
+            </div>
+  <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-pink-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Onload function</h1>
+                <p class=" pt-[10px] h-[200px]">
+                   The onload function is called when the user load the page.
+                  <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+function showMessage() {
+const heading = document.getElementById("welcome");
+heading.textContent = "Page loaded successfully";
+}
+</pre>
+                </div>
+            </div>
+            
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Changing CSS</h1>
+                <p class=" pt-[10px] h-[200px]">
+                    You can use .style to change the css of the html tags. We can change color, backgroundColor font-size, padding, margin and much more. <br>
+                    We can use camelCase a naming style or convention used in programming.
+                    <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
                     <pre>
 function changeStyle() {
   const p = document.getElementById("text");
@@ -133,6 +288,84 @@ function changeStyle() {
   p.style.fontSize = "24px";
   p.style.padding = "10px";
   p.style.borderRadius = "8px";
+}
+</pre>
+                </div>
+            </div>
+
+             <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-yellow-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Changing Colors and Backgrounds</h1>
+                <p class=" pt-[10px] h-[200px]">
+                    In this example we can change the the color and and background of an element.
+                    <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+function changeStyle() {
+  const p = document.getElementById("container");
+  p.style.color = "red";
+  p.style.backgroundColor = "pink"
+  
+}
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-green-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Change margin and padding</h1>
+                <p class=" pt-[10px] h-[200px]">
+                    In this example we can change the the color and and background of an element.
+                    <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+function changeStyle() {
+  const p = document.getElementById("container");
+  p.style.margin = "30px";
+  p.style.padding = "30px"
+  
+}
+</pre>
+                </div>
+            </div>
+            <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-pink-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Font size & Border</h1>
+                <p class=" pt-[10px] h-[200px]">
+                    In this example we can change the font size of the text.
+                    <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+function changeStyle() {
+  const p = document.getElementById("container");
+  p.style.font-size= "30px";
+  p.style.border = "2px solid black"
+  
+}
+</pre>
+                </div>
+            </div>
+             <div
+                class="lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] bg-blue-400 px-[20px] shadow-lg  py-[15px] text-center rounded-[15px] border-t-4 border-indigo-400 transition-all duration-300 hover:bg-[#EFDECD] hover:text-indigo-700">
+                <h1 class="font-[700] text-[22px]  cursor-pointer">Height, Width & Display</h1>
+                <p class=" pt-[10px] h-[200px]">
+                    In this example we can change the height width and apply flex box as needed.
+                    <br>
+                    <br>
+                </p>
+                <div class="bg-gray-900 text-green-400 p-4 rounded-[6px]  font-mono text-sm overflow-x-auto italic">
+                    <pre>
+function changeStyle() {
+  const p = document.getElementById("container");
+  p.style.height= "200px";
+  p.style.width= "300px"
+  p.style.display = "flex"
+  p.style.justifyContent = "center"
 }
 </pre>
                 </div>
