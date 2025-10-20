@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+</head>
+
+<body class="bg-gradient-to-br from-blue-50 to-indigo-50 min-h-screen">
+    <header class="hidden md:flex items-center justify-between cursor-pointer bg-blue-500 p-3 hover:bg-pink-500">
+        <h1 class="text-white text-[20px] font-bold cursor-pointer">Master Class</h1>
+        <nav>
+            <ul class="flex space-x-4 font-[50px] text-[18px] text-white">
+                <li>
+                    <a href="index.html" class="pb-1  hover:text-black">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" pb-1  hover:text-black">
+                        HTML
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class=" pb-1  hover:text-black">
+                        CSS
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="pb-1  hover:text-black">
+                        JavaScriptc
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+     <section class="block md:hidden">
+    <div class="bg-blue-500 p-4 flex justify-between items-center">
+    <h1 class="text-white text-2xl">Master Class</h1>
+    <button onclick="openRightMenu()" class="text-white text-3xl">&#9776;</button>
+  </div>
+  <div id="rightMenu" class="fixed top-0 right-0 h-full w-64 bg-[white] text-blue-500 shadow-lg text-900 p-4 transform translate-x-full transition-transform duration-300 ease-in-out">
+    <button onclick="closeRightMenu()" class="text-blue-500 text-2xl mb-4">&times;</button>
+    <ul class="space-y-4">
+      <li><a href="#" class="block hover:bg-red-500 p-2 rounded">HTML</a></li>
+      <li><a href="#" class="block hover:bg-red-500 p-2 rounded">CSS</a></li>
+      <li><a href="#" class="block hover:bg-red-500 p-2 rounded">JavaScript</a></li>
+      <li><a href="#" class="block hover:bg-red-500 p-2 rounded">REACT JS</a></li>
+
+    </ul>
+  </div>
+  </section>
+    <section class="w-full gradient-bg text-white py-12 px-6 text-center">
+        <h1 class="font-black text-4xl mb-4 text-[black]">Master Notes Website</h1>
+
+    </section>
+    <section class="justify-center mx-auto max-w-[1300px] p-2">
+
+        <section class="my-[20px] flex gap-12 flex-wrap ">
+            <div
+                class=" bg-yellow-500 lg:w-[30%] sm:w-[100%] cursor-pointer md:w-[42%] cursor-pointer rounded-xl p-6 border-l-4 border-l-indigo-500 shadow-md transition-all duration-300 hover:bg-blue-400">
+                <h1
+                    class="font-bold text-xl text-gray-800 mt-4 mb-3">
+                    REACT JS TUTORIAL
+                </h1>
+                <p
+                    class="line-clamp-3 overflow-hidden pt-[10px] text-stone-900 ">
+                          In the REACT JS TUTORIAL we learn some bacis like how to create application using node and in advance methods we use props, hooks, and routing to builds application with multiple pages.
+                </p>
+                <a class="underline text-indigo-600 transition-colors duration-300 hover:text-pink-600"
+                    href="react-class1.html">Read More</a>
+            </div>
+            
+             
+        </section>
+        
+        
+    </section>
+    <footer class="bg-pink-500 text-white text-center p-4 mt-5 cursor-pointer hover:bg-green-400 ">
+        @ 2025 Notes Website. All rights reserved by IT Developer.</footer>
+        
+
+
+         <script>
+    const rightMenu = document.getElementById("rightMenu");
+
+    function openRightMenu() {
+      rightMenu.classList.remove("translate-x-full");
+    }
+
+    function closeRightMenu() {
+      rightMenu.classList.add("translate-x-full");
+    }
+  </script>
+</body>
+
+</html>
+
